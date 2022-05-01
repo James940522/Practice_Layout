@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>CSS Flex</title>
-	<link rel="stylesheet" href="default.css">
-</head>
-<body>
-	
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Flex</title>
+    <link rel="stylesheet" href="default.css" />
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        align-items: center;
+        /* align-content: center; */
+        height: 300px;
+      }
+
+      /* @media (min-width: 1000px) {
+           .flex-container {
+             flex-direction: row;
+           }
+           .flex-item {
+             flex: 1;
+           }
+         } */
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      </div>
+      <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBB</div>
+      <div class="flex-item">CCCCCCCCCCCCCCCCCCCC</div>
+    </div>
+  </body>
 </html>
